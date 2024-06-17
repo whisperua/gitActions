@@ -7,6 +7,11 @@ on:
 
   workflow_dispatch:
 
+defaults:
+  run:
+    shell: bash
+    working-directory: ./
+
 jobs:
   build:
     runs-on: ubuntu-latest
